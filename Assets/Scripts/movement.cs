@@ -9,14 +9,14 @@ public class movement : MonoBehaviour {
   
 	// Update is called once per frame
 	void Update () {
-        rb.AddForce(forwardForce, 0, 0);
+        rb.AddForce(forwardForce * Time.deltaTime, 0, 0);
         if (Input.GetKey("d"))
         {
-            rb.AddForce(0, 0, -sidewaysForce);
+            rb.AddForce(0, 0, -sidewaysForce * Time.deltaTime, ForceMode.VelocityChange);
         }
         if (Input.GetKey("a"))
         {
-            rb.AddForce(0, 0, sidewaysForce);
+            rb.AddForce(0, 0, sidewaysForce * Time.deltaTime, ForceMode.VelocityChange);
         }
     }
 }
