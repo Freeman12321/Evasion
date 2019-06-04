@@ -8,7 +8,7 @@ public class movement : MonoBehaviour {
     public float sidewaysForce = 50f;
   
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
         rb.AddForce(forwardForce * Time.deltaTime, 0, 0);
         if (Input.GetKey("d")) {
             rb.AddForce(0, 0, -sidewaysForce * Time.deltaTime, ForceMode.VelocityChange);
