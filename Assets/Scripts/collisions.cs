@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class collisions : MonoBehaviour {
 
-    public movement stopmovement;
+    public movement movement;
+
     void OnCollisionEnter(Collision collisionInfo)
     {
-        if (collisionInfo.collider.name == "Obstacle")
+        if (collisionInfo.collider.tag == "Obstacle")
         {
-            stopmovement.enabled = false;           
+            movement.enabled = false;
+            FindObjectOfType<gamemanagement>().endGame();
         }
     }
 }
