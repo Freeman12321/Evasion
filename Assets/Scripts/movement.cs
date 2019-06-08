@@ -9,7 +9,7 @@ public class movement : MonoBehaviour {
   
 	// Update is called once per frame
 	void FixedUpdate () {
-        rb.AddForce(forwardForce * Time.deltaTime, 0, 0);
+        rb.AddForce(forwardForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
         if (Input.GetKey("d")) {
             rb.AddForce(0, 0, -sidewaysForce * Time.deltaTime, ForceMode.VelocityChange);
         }
