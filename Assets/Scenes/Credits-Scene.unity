@@ -220,8 +220,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.749}
   m_AnchorMax: {x: 0.5, y: 0.749}
-  m_AnchoredPosition: {x: -0.0000073925, y: -260}
-  m_SizeDelta: {x: 717.4, y: 122.2}
+  m_AnchoredPosition: {x: -0.0000073925, y: -139}
+  m_SizeDelta: {x: 717.4, y: 96.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &168324970
 MonoBehaviour:
@@ -363,8 +363,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 151, y: -240}
-  m_SizeDelta: {x: 160, y: 60.5}
+  m_AnchoredPosition: {x: 151, y: -141.3}
+  m_SizeDelta: {x: 160, y: 47.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &359644632
 MonoBehaviour:
@@ -404,7 +404,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 359644633}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2083686149}
+        m_MethodName: Quit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &359644633
@@ -475,8 +486,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -154, y: -240}
-  m_SizeDelta: {x: 160, y: 60.5}
+  m_AnchoredPosition: {x: -154, y: -141.3}
+  m_SizeDelta: {x: 160, y: 47.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &498559112
 MonoBehaviour:
@@ -516,7 +527,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 498559113}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2083686150}
+        m_MethodName: LoadLevelI
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &498559113
@@ -585,8 +607,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.749}
   m_AnchorMax: {x: 0.5, y: 0.749}
-  m_AnchoredPosition: {x: -0.0000073925, y: -202.6}
-  m_SizeDelta: {x: 717.4, y: 93.5}
+  m_AnchoredPosition: {x: -0.0000073925, y: -93.8}
+  m_SizeDelta: {x: 717.4, y: 73.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &744347129
 MonoBehaviour:
@@ -874,8 +896,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.749}
   m_AnchorMax: {x: 0.5, y: 0.749}
-  m_AnchoredPosition: {x: 0, y: -15.0000305}
-  m_SizeDelta: {x: 717.4, y: 122.2}
+  m_AnchoredPosition: {x: 0, y: 6.399994}
+  m_SizeDelta: {x: 717.4, y: 96.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1610807220
 MonoBehaviour:
@@ -1021,6 +1043,8 @@ GameObject:
   - component: {fileID: 2083686146}
   - component: {fileID: 2083686148}
   - component: {fileID: 2083686147}
+  - component: {fileID: 2083686149}
+  - component: {fileID: 2083686150}
   m_Layer: 5
   m_Name: Credits
   m_TagString: Untagged
@@ -1085,3 +1109,25 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2083686145}
   m_CullTransparentMesh: 0
+--- !u!114 &2083686149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2083686145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 845fb7a3d9ca76147811faf503275753, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2083686150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2083686145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbb923a479be50242a6640dc64c2a64a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
