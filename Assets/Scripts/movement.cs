@@ -20,5 +20,18 @@ public class movement : MonoBehaviour {
             FindObjectOfType<gamemanagement>().endGame();
             sidewaysForce = 0;
         }
+        
+    }
+    public void StopMovement()
+    {
+        forwardForce = 0;
+        sidewaysForce = 0;
+        rb.drag = 100;
+    }
+    public void RestartMovement()
+    {
+        forwardForce = 30;
+        sidewaysForce = 55;
+        rb.drag = 1;
     }
 }
