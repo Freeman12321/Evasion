@@ -3666,7 +3666,7 @@ Prefab:
     - target: {fileID: 114537312608175942, guid: f9c3b5f7dfd4f4d4d8b37e70ee031ee9,
         type: 2}
       propertyPath: maxHeight
-      value: 6
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4438803536836804, guid: f9c3b5f7dfd4f4d4d8b37e70ee031ee9, type: 2}
       propertyPath: m_LocalScale.x
