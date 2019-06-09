@@ -1,10 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class credits : MonoBehaviour {
 
-    // Use this for initialization
+    // Quits the application when the quit button is clicked
     public void Quit() {
         Debug.Log("Quit");
         Application.Quit();

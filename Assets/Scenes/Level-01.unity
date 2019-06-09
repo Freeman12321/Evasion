@@ -652,6 +652,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 1204649466}
+  player: {fileID: 1204649465}
+  FinalScoreText: {fileID: 0}
   restartDelay: 1
   completeLevelUI: {fileID: 1806640582}
   pausedUI: {fileID: 2094555352}
@@ -1452,7 +1454,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2094555353
 RectTransform:
   m_ObjectHideFlags: 0
