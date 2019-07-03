@@ -1,12 +1,9 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
-
 public class loadlevelI : MonoBehaviour {
-    
-    //loads the game again from level 1 and reset lives to 3
-    public void LoadLevelI() {
-        Debug.Log("Level 1");
+
+    // loads level 1
+    public void LoadFirstLevel () {
         SceneManager.LoadScene("Level-01");
-        gamemanagement.lives = 3;
-	}
+    }
 }
